@@ -77,5 +77,5 @@ jobs:
           tag: v${{ inputs.rel_version }}
           name: Azure Blobs Plugin v${{ inputs.rel_version }}
           artifacts: "**/*.*"
-          body: "This is the v${{ inputs.rel_version }} release of Azure Blobs Storage for FlowSynx System."
+          body: "This is the v${{ inputs.rel_version }} release of Azure Blobs Plugin for FlowSynx System."
           token: ${{ secrets.GH_TOKEN }}
