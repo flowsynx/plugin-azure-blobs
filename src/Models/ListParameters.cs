@@ -1,6 +1,6 @@
 ﻿namespace FlowSynx.Plugins.Azure.Blobs.Models;
 
-public class ListParameters
+internal class ListParameters
 {
     public string Path { get; set; } = string.Empty;
     public string? Filter { get; set; }

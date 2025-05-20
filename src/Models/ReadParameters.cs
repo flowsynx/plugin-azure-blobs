@@ -1,6 +1,6 @@
 ﻿namespace FlowSynx.Plugins.Azure.Blobs.Models;
 
-public class ReadParameters
+internal class ReadParameters
 {
     public string Path { get; set; } = string.Empty;
 }

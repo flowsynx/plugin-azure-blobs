@@ -178,6 +178,15 @@ namespace FlowSynx.Plugins.Azure.Blobs {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Reflection-based access is not allowed..
+        /// </summary>
+        internal static string ReflectionBasedAccessIsNotAllowed {
+            get {
+                return ResourceManager.GetString("ReflectionBasedAccessIsNotAllowed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Resource &apos;{0}&apos; not exist!.
         /// </summary>
         internal static string ResourceNotExist {

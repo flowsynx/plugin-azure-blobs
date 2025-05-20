@@ -2,6 +2,7 @@
 using FlowSynx.Plugins.Azure.Blobs.Models;
 using FlowSynx.PluginCore.Extensions;
 using FlowSynx.Plugins.Azure.Blobs.Services;
+using FlowSynx.PluginCore.Helpers;
 
 namespace FlowSynx.Plugins.Azure.Blobs;
 
@@ -9,6 +10,7 @@ public class AzureBlobPlugin : IPlugin
 {
     private IAzureBlobManager _manager = null!;
     private AzureBlobSpecifications _azureBlobSpecifications = null!;
+    private bool _isInitialized;
 
     public PluginMetadata Metadata
     {
@@ -31,16 +33,23 @@ public class AzureBlobPlugin : IPlugin
 
     public Task Initialize(IPluginLogger logger)
     {
+        if (ReflectionHelper.IsCalledViaReflection())
+            throw new InvalidOperationException(Resources.ReflectionBasedAccessIsNotAllowed);
+
         ArgumentNullException.ThrowIfNull(logger);
         var connection = new AzureBlobConnection();
         _azureBlobSpecifications = Specifications.ToObject<AzureBlobSpecifications>();
         var client = connection.Connect(_azureBlobSpecifications);
         _manager = new AzureBlobManager(logger, client, _azureBlobSpecifications.ContainerName);
+        _isInitialized = true;
         return Task.CompletedTask;
     }
 
     public async Task<object?> ExecuteAsync(PluginParameters parameters, CancellationToken cancellationToken)
     {
+        if (ReflectionHelper.IsCalledViaReflection())
+            throw new InvalidOperationException(Resources.ReflectionBasedAccessIsNotAllowed);
+
         var operationParameter = parameters.ToObject<OperationParameter>();
         var operation = operationParameter.Operation;
 

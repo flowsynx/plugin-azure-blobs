@@ -4,7 +4,7 @@ using FlowSynx.Plugins.Azure.Blobs.Models;
 
 namespace FlowSynx.Plugins.Azure.Blobs.Services;
 
-public class AzureBlobConnection : IAzureBlobConnection
+internal class AzureBlobConnection : IAzureBlobConnection
 {
     public BlobServiceClient Connect(AzureBlobSpecifications specifications)
     {

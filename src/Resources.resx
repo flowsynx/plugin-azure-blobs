@@ -156,6 +156,9 @@
   <data name="PropertiesShouldHaveValue" xml:space="preserve">
     <value>Both AccountKey and AccountName properties in the azure blob specifications must have value.</value>
   </data>
+  <data name="ReflectionBasedAccessIsNotAllowed" xml:space="preserve">
+    <value>Reflection-based access is not allowed.</value>
+  </data>
   <data name="ResourceNotExist" xml:space="preserve">
     <value>Resource '{0}' not exist!</value>
   </data>

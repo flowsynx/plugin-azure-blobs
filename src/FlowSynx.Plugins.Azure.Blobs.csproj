@@ -13,9 +13,13 @@
 
 	<ItemGroup>
 		<PackageReference Include="Azure.Storage.Blobs" Version="12.24.0" />
-		<PackageReference Include="FlowSynx.PluginCore" Version="1.2.0" />
+		<PackageReference Include="FlowSynx.PluginCore" Version="1.2.1" />
 	</ItemGroup>
-
+	
+	<ItemGroup>
+		<InternalsVisibleTo Include="FlowSynx.Plugins.Azure.Blobs.UnitTests" />
+	</ItemGroup>
+	
 	<ItemGroup>
 		<Compile Update="Resources.Designer.cs">
 			<DesignTime>True</DesignTime>

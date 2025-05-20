@@ -11,7 +11,7 @@ using System.Text;
 
 namespace FlowSynx.Plugins.Azure.Blobs.Services;
 
-public class AzureBlobManager : IAzureBlobManager
+internal class AzureBlobManager : IAzureBlobManager
 {
     private readonly IPluginLogger _logger;
     private readonly BlobServiceClient _client;

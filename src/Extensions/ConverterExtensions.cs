@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FlowSynx.Plugins.Azure.Blobs.Extensions;
 
-public static class ConverterExtensions
+internal static class ConverterExtensions
 {
     public static async Task<PluginContext> ToContext(this BlobClient blobClient, bool? includeMetadata,
         CancellationToken cancellationToken)

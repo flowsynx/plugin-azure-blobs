@@ -2,7 +2,7 @@
 
 namespace FlowSynx.Plugins.Azure.Blobs.Services;
 
-public interface IAzureBlobManager
+internal interface IAzureBlobManager
 {
     Task Create(PluginParameters parameters, CancellationToken cancellationToken);
     Task Delete(PluginParameters parameters, CancellationToken cancellationToken);
