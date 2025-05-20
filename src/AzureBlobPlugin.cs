@@ -50,6 +50,9 @@ public class AzureBlobPlugin : IPlugin
         if (ReflectionHelper.IsCalledViaReflection())
             throw new InvalidOperationException(Resources.ReflectionBasedAccessIsNotAllowed);
 
+        if (!_isInitialized)
+            throw new InvalidOperationException($"Plugin '{Metadata.Name}' v{Metadata.Version} is not initialized.");
+
         var operationParameter = parameters.ToObject<OperationParameter>();
         var operation = operationParameter.Operation;
 
