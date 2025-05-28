@@ -20,10 +20,13 @@ public class AzureBlobPlugin : IPlugin
             {
                 Id = Guid.Parse("7f21ba04-ea2a-4c78-a2f9-051fa05391c8"),
                 Name = "Azure.Blobs",
+                CompanyName = "FlowSynx",
                 Description = Resources.ConnectorDescription,
                 Version = new PluginVersion(1, 0, 0),
                 Namespace = PluginNamespace.Connectors,
-                Author = "FlowSynx LLC."
+                Authors = new List<string> { "FlowSynx" },
+                Copyright = "© FlowSynx. All rights reserved.",
+                Tags = new List<string>() { "FlowSynx", "Azure", "Blobs", "Cloud" }
             };
         }
     }
