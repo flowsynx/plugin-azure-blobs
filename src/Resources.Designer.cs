@@ -79,15 +79,6 @@ namespace FlowSynx.Plugins.Azure.Blobs {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Connector for managing Microsoft Azure Blob storage system..
-        /// </summary>
-        internal static string ConnectorDescription {
-            get {
-                return ResourceManager.GetString("ConnectorDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Container &apos;{0}&apos; not found!.
         /// </summary>
         internal static string ContainerNotFound {
@@ -165,6 +156,15 @@ namespace FlowSynx.Plugins.Azure.Blobs {
         internal static string ParentNotFound {
             get {
                 return ResourceManager.GetString("ParentNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Integrates with Azure Blob Storage to upload, download, list, and manage blobs in containers. Useful for handling large, unstructured data in workflows..
+        /// </summary>
+        internal static string PluginDescription {
+            get {
+                return ResourceManager.GetString("PluginDescription", resourceCulture);
             }
         }
         

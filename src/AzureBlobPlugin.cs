@@ -21,7 +21,7 @@ public class AzureBlobPlugin : IPlugin
                 Id = Guid.Parse("7f21ba04-ea2a-4c78-a2f9-051fa05391c8"),
                 Name = "Azure.Blobs",
                 CompanyName = "FlowSynx",
-                Description = Resources.ConnectorDescription,
+                Description = Resources.PluginDescription,
                 Version = new PluginVersion(1, 0, 0),
                 Namespace = PluginNamespace.Connectors,
                 Authors = new List<string> { "FlowSynx" },
@@ -30,7 +30,8 @@ public class AzureBlobPlugin : IPlugin
                 ReadMe = "README.md",
                 RepositoryUrl = "https://github.com/flowsynx/plugin-azure-blobs",
                 ProjectUrl = "https://flowsynx.io",
-                Tags = new List<string>() { "FlowSynx", "Azure", "Blobs", "Cloud" }
+                Tags = new List<string>() { "FlowSynx", "Azure", "Blobs", "Cloud" },
+                Category = PluginCategories.CloudPlatform
             };
         }
     }

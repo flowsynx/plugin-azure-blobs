@@ -123,9 +123,6 @@
   <data name="BlobItemNotFound" xml:space="preserve">
     <value>Blob item '{0}' not found!</value>
   </data>
-  <data name="ConnectorDescription" xml:space="preserve">
-    <value>Connector for managing Microsoft Azure Blob storage system.</value>
-  </data>
   <data name="ContainerNotFound" xml:space="preserve">
     <value>Container '{0}' not found!</value>
   </data>
@@ -152,6 +149,9 @@
   </data>
   <data name="ParentNotFound" xml:space="preserve">
     <value>The specified parent path does not exist.</value>
+  </data>
+  <data name="PluginDescription" xml:space="preserve">
+    <value>Integrates with Azure Blob Storage to upload, download, list, and manage blobs in containers. Useful for handling large, unstructured data in workflows.</value>
   </data>
   <data name="PropertiesShouldHaveValue" xml:space="preserve">
     <value>Both AccountKey and AccountName properties in the azure blob specifications must have value.</value>
