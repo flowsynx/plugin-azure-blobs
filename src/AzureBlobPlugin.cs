@@ -22,7 +22,7 @@ public class AzureBlobPlugin : IPlugin
                 Name = "Azure.Blobs",
                 CompanyName = "FlowSynx",
                 Description = Resources.PluginDescription,
-                Version = new Version(1, 0, 0),
+                Version = new Version(1, 1, 0),
                 Category = PluginCategory.Cloud,
                 Authors = new List<string> { "FlowSynx" },
                 Copyright = "© FlowSynx. All rights reserved.",
@@ -31,7 +31,7 @@ public class AzureBlobPlugin : IPlugin
                 RepositoryUrl = "https://github.com/flowsynx/plugin-azure-blobs",
                 ProjectUrl = "https://flowsynx.io",
                 Tags = new List<string>() { "FlowSynx", "Azure", "Blobs", "Cloud" },
-                MinimumFlowSynxVersion = new Version(1, 1, 0),
+                MinimumFlowSynxVersion = new Version(1, 1, 1),
             };
         }
     }
